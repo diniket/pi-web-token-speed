@@ -1,4 +1,4 @@
-# pi-token-speed
+# pi-web-token-speed
 
 Generation speed (tokens/second) for your LLMs, right inside the **Pi Web** chat UI.
 
@@ -39,16 +39,17 @@ labelled estimate and never passed off as a measurement. Tool execution time is 
 ## Install
 
 ```sh
-npm i @diniket/pi-token-speed
+npm i pi-web-token-speed
 ```
 
-or clone the repo; in both cases you link the package folder below. If you installed it from npm,
-that folder is `node_modules/@diniket/pi-token-speed`.
+or clone the repo. Below, `<pkg>` is the package folder: `node_modules/pi-web-token-speed` after the
+npm install, or your clone. The link names stay `pi-token-speed`: that is the internal plugin id, not
+the package name.
 
 **1. Pi extension (measures).** Link the *folder*, not the single file:
 
 ```sh
-ln -s ~/pi-token-speed ~/.pi/agent/extensions/pi-token-speed
+ln -s <pkg> ~/.pi/agent/extensions/pi-token-speed
 ```
 
 Then `/reload` in running sessions.
@@ -57,7 +58,7 @@ Then `/reload` in running sessions.
 
 ```sh
 mkdir -p ~/.pi-web/plugins
-ln -s ~/pi-token-speed ~/.pi-web/plugins/pi-token-speed
+ln -s <pkg> ~/.pi-web/plugins/pi-token-speed
 systemctl --user restart pi-web-sessiond
 ```
 
