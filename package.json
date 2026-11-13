@@ -1,5 +1,5 @@
 {
-  "name": "pi-token-speed",
+  "name": "@diniket/pi-token-speed",
   "version": "0.1.0",
   "description": "Token generation speed (tok/s) for LLMs inside the Pi Web chat UI: decode, TTFT and prefill from native Pi metrics, without touching the backends.",
   "type": "module",

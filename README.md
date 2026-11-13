@@ -38,6 +38,13 @@ labelled estimate and never passed off as a measurement. Tool execution time is 
 
 ## Install
 
+```sh
+npm i @diniket/pi-token-speed
+```
+
+or clone the repo; in both cases you link the package folder below. If you installed it from npm,
+that folder is `node_modules/@diniket/pi-token-speed`.
+
 **1. Pi extension (measures).** Link the *folder*, not the single file:
 
 ```sh
