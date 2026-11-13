@@ -1,0 +1,58 @@
+{
+  "name": "pi-token-speed",
+  "version": "0.1.0",
+  "description": "Token generation speed (tok/s) for LLMs inside the Pi Web chat UI: decode, TTFT and prefill from native Pi metrics, without touching the backends.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diniket/pi-token-speed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/diniket/pi-token-speed/issues"
+  },
+  "homepage": "https://github.com/diniket/pi-token-speed#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "author": "diniket",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "keywords": [
+    "pi-web.dev-plugin",
+    "pi-web-plugin",
+    "pi-package",
+    "pi-web",
+    "pi-coding-agent",
+    "token-speed",
+    "llm"
+  ],
+  "pi": {
+    "extensions": [
+      "./src/extension/index.js"
+    ]
+  },
+  "piWeb": {
+    "plugins": [
+      {
+        "id": "pi-token-speed",
+        "browserRoot": "src",
+        "module": "src/browser/index.js",
+        "serverModule": "src/server/index.js"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "check": "node --check src/protocol.js && node --check src/metrics.js && node --check src/extension/index.js && node --check src/server/index.js && node --check src/browser/index.js",
+    "screenshot": "node scripts/make-screenshot.mjs"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ]
+}
