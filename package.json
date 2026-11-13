@@ -6,12 +6,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/diniket/pi-token-speed.git"
+    "url": "git+https://github.com/diniket/pi-web-token-speed.git"
   },
   "bugs": {
-    "url": "https://github.com/diniket/pi-token-speed/issues"
+    "url": "https://github.com/diniket/pi-web-token-speed/issues"
   },
-  "homepage": "https://github.com/diniket/pi-token-speed#readme",
+  "homepage": "https://github.com/diniket/pi-web-token-speed#readme",
   "publishConfig": {
     "access": "public"
   },
